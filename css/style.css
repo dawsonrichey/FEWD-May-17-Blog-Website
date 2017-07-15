@@ -56,6 +56,29 @@ h2 {
 	font-family: 'roboto';
 
 }
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 15px;
+	margin-left: 15px;
+}
+li {
+	float: left;
+    margin-right: 5px;
+    padding-right: 2px;
+    font-size: .9em;;
+}
+
+.header{
+		background-color: #666;
+
+}
+.info {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(58, 206, 194, 0.7);
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -109,6 +132,7 @@ h2 {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+	position: fixed;
 }
 
 /* ---- Page Elements ---- */
@@ -130,6 +154,121 @@ h2 {
 	border-radius: .35em;
 }
 
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  padding: 0px 25px 50px 2px;
+  margin: 0px 25px 10px 2px;
+  
+  /*Positioning*/
+  position: absolute;
+  left:10px;
+  top:1px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+.reverse {
+    display: block;
+    background: #fff;
+    padding: 25px 20px 15px 60px;
+    margin: 0 0 20px;
+    position: relative;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    text-align: left;
+    border-left: 8px solid #6dbacb;
+    border-right: 2px solid #6dbacb;
+    -moz-box-shadow: 25px 20px 40px -10px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 25px 20px 40px -10px rgba(0,0,0,0.15);
+    box-shadow: 25px 20px 40px -10px rgba(0,0,0,0.15);
+	
+}
+
+blockquote footer {
+  margin-top: 0px;
+  padding: 0;
+  color: #777;
+  font-size: 12pt;
+  text-align: right;
+  font-style: italic;
+}
+
+left {
+  margin-top: .1em;
+  padding: 0;
+  color: #777;
+  font-size: 12pt;
+  text-align: left;
+  font-style: italic;
+}
+
+blockquote footer:before {
+  content: "\2015\0020";
+}
+
+.center {
+	text-align: center;
+}
+
+#quotes {
+	width: 80%;
+}
+
+.poster {
+	margin: 0 auto;
+	width: 50%
+}
 /* ================================= 
   Media Queries
 ==================================== */
