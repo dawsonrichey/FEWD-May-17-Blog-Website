@@ -1,0 +1,30 @@
+_________________________________________
+
+             Tasks List
+_________________________________________
+
+
+1. Fix styling sheet on index.html
+
+2. Add home page [3] short bio content.
+    2.1 Add buttons
+    2.2 Link buttons to corresponding pages
+    2.3 Style buttons
+
+3. Add lightbox effect to images.
+    3.1 Add caption with release date.
+
+4. Fix footer to the bottom of the page.
+
+5. Add styling to box office and tags element.
+
+6. Fix overlapping elements on single blog post page.
+    6.1 Add footer element
+
+7. Clean Code
+    .1 Move hard style rules to style sheet
+    .2 
+
+8.Optimaztion
+    8.1 Remove unused style elemnts
+    
